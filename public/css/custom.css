@@ -1,0 +1,160 @@
+#main-navbar{
+    border: none;
+    height: 315px;
+    background-color: transparent;
+}
+
+#logo-holder{
+    width: 250px;
+    margin: 15px;
+}
+
+#toggle-button{
+    margin-top: 45px;
+    margin-right: 35px;
+}
+
+#background-image{
+    background-image: url(../img/Tijuana1.jpg);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 -113px;
+    z-index: 0;
+    background-attachment: fixed;
+}
+
+#main-title-holder{
+    margin-top: 140px;
+}
+
+#main-title{
+    font-size: 5em;
+    color:white;
+}
+
+.tab-holder .tab:last-child{
+    border-right: none;
+}
+
+.tab{
+    position: relative;
+    height: 100px;
+    background-color: #110f35;
+    width: calc(100%/7);
+    float: left;
+    display:inline-block;
+    border-right: 1px solid #FFF;
+    text-decoration: none;
+    color:#fff;
+    font-size:1.3vw;
+    text-align: center;
+}
+
+.tab:hover{
+    color:#110f35;
+    background-color: #fff
+}
+
+.tab-text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 15px;
+    width:100%;
+}
+
+.debug-size{
+    position:fixed;
+    bottom:0;
+    left:0;
+    background-color: red;
+    padding: 15px;
+    color:black;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.container{
+    background-color: #FFF;
+    position:relative;
+}
+
+.main-container{
+    margin-top: -50px;
+}
+
+.main-row{
+    padding-left:20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+}
+
+.debug{
+    border: 1px black dashed;
+}
+
+.interest-title{
+    margin-top:22px;
+    margin-bottom: 22px;
+}
+
+.interest{
+    margin-bottom: 35px;
+}
+
+.interest a{
+    word-break: break-all;
+}
+
+.interest .text-primary{
+    font-weight: 600;
+    font-size: 20px;
+    line-height:27px;
+}
+
+.main-header{
+    font-weight: 600;
+}
+
+.main-text{
+    font-size: 19px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.bottom-background{
+    background-image: url(../img/Portada.jpg);
+    background-attachment: fixed;
+    height: 365px;
+    margin-top: -150px;
+    background-size: inherit;
+    background-position: 0px -114px;
+}
+
+@media(max-width:1199px){
+    #main-title-holder{
+        margin-top: 60px;
+    }
+    #main-title{
+        font-size: 3.5em;
+    }
+}
+@media(max-width:991px){
+    #main-title{
+        font-size: 3em;
+        margin-top: 30px;
+    }
+}
+@media(max-width:767px){
+    #main-navbar{
+        height: 135px;
+    }
+    #logo-holder{
+        width:150px;
+    }
+}
