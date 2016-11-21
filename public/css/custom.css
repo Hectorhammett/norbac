@@ -136,6 +136,20 @@
     background-position: 0px -114px;
 }
 
+.gears{
+    width:120px;
+}
+
+.gears-text{
+    margin-top:50px;
+}
+
+.gears-group{
+    position: relative;
+    margin: 50px auto 0;
+    width: 380px;
+}
+
 @media(max-width:1199px){
     #main-title-holder{
         margin-top: 60px;

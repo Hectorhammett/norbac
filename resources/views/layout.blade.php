@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>Norbac | @yield('title')</title>
 
     <!-- Bootstrap -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet"/>
@@ -59,22 +59,22 @@
     <!-- Starts main page -->
     <div class="container main-container">
         <div class="row tab-holder hidden-xs">
-            <a href="#" class="tab">
+            <a href="{{ url('/') }}" class="tab">
                 <div>
                     <p class="tab-text">¿Quiénes Somos?</p>
                 </div>
             </a>
-            <a href="#" class="tab">
+            <a href="{{ url('manejo-integral') }}" class="tab">
                 <div>
                     <p class="tab-text">Manejo de Residuos</p>
                 </div>
             </a>
-            <a href="#" class="tab">
+            <a href="{{ url('manejo-integral') }}" class="tab">
                 <div>
                     <p class="tab-text">Contacto</p>
                 </div>
             </a>
-            <a href="#" class="tab">
+            <a href="{{ url('otras-actividades') }}" class="tab">
                 <div>
                     <p class="tab-text">Otras Actividades</p>
                 </div>
@@ -99,6 +99,7 @@
             <div class="col-md-8 col-sm-7">
                 @yield('mainContent')
             </div>
+            <hr class="visible-xs"/>
             <div class="col-md-4  col-sm-5">
                 <h2 class="text-center interest-title">Páginas de Interés</h2>
                 <div class="interest">

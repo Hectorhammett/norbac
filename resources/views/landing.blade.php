@@ -1,5 +1,7 @@
 @extends('layout');
 
+@section('title','¿Quiénes Somos?')
+
 @section('mainContent')
     <div class="row">
         <div class="col-sm-12">

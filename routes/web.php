@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('landing');
 });
+
+Route::get("/manejo-integral",function(){
+    return view("manejoIntegral");
+});
+
+Route::get("/otras-actividades",function(){
+    return view("otrasActividades");
+});
