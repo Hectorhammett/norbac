@@ -35,7 +35,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#" id="logo-holder"><img src="{{ asset('img/logo_white.png') }}" class="img-responsive"/></a>
+                        <a class="navbar-brand" href="#" id="logo-holder"><img src="{{ asset('img/logo_white_small.png') }}" class="img-responsive"/></a>
                     </div>
                 </div>
                 <div class="col-sm-8 text-center hidden-xs" id="main-title-holder">

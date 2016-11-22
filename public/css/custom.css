@@ -12,6 +12,7 @@
 #toggle-button{
     margin-top: 38px;
     margin-right: 35px;
+    background-color: #fff;
 }
 
 #background-image{
@@ -185,6 +186,9 @@
     }
 }
 @media(max-width:767px){
+    .main-container{
+        margin-bottom: 0;
+    }
     #main-navbar{
         height: 135px;
     }
