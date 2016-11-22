@@ -1,17 +1,8 @@
 @extends('layout')
 
-@section('title','Otras Actividades')
+@section('title','Galería')
 
 @section('mainContent')
-    <div class="row">
-        <div class="col-sm-12">
-            <h1 class="main-header">Otras Actividades</h1>
-            <ul class="main-text">
-                <li>Restauración de zona antigüa en fase de cese de operaciones</li>
-                <li>Contribución a la quema de gases de efecto invernadero</li>
-            </ul>
-        </div>
-    </div>
     <div class="row hidden-xs">
         <div class="col-sm-12">
             <div class="gears-group">

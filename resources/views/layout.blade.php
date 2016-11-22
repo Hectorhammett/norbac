@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- The above 3 meta tags *must* come first in the head any other head content must come *after* these tags -->
     <title>Norbac | @yield('title')</title>
 
     <!-- Bootstrap -->
@@ -23,12 +23,6 @@
   <body>
     <div id="background-image">
     </div>
-    <div class="debug-size">
-        <p class="visible-xs">XS</p>
-        <p class="visible-sm">S</p>
-        <p class="visible-md">M</p>
-        <p class="visible-lg">L</p>
-    </div>
     <nav class="navbar navbar-default" id="main-navbar">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -41,7 +35,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#" id="logo-holder"><img src="{{ asset('img/logo_green.png') }}" class="img-responsive"/></a>
+                        <a class="navbar-brand" href="#" id="logo-holder"><img src="{{ asset('img/logo_white.png') }}" class="img-responsive"/></a>
                     </div>
                 </div>
                 <div class="col-sm-8 text-center hidden-xs" id="main-title-holder">
@@ -51,7 +45,15 @@
             <!--  -->
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                
+                 <ul class="nav navbar-nav navbar-right blue-nav visible-xs">
+                    <li><a href="{{ url('/') }}">¿Quiénes somos?</a></li>
+                    <li><a href="{{ url('/manejo-integral') }}">Manejo de Residuos</a></li>
+                    <li><a href="{{ url('/contacto') }}">Contacto</a></li>
+                    <li><a href="{{ url('/otras-actividades') }}">Otras Actividades</a></li>
+                    <li><a href="{{ url('/legislacion') }}">Legislación</a></li>
+                    <li><a href="{{ url('/estadisticas') }}">Estadísticas</a></li>
+                    <li><a href="{{ url('/galeria') }}">Galería</a></li>
+                </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
@@ -69,7 +71,7 @@
                     <p class="tab-text">Manejo de Residuos</p>
                 </div>
             </a>
-            <a href="{{ url('manejo-integral') }}" class="tab">
+            <a href="{{ url('contacto') }}" class="tab">
                 <div>
                     <p class="tab-text">Contacto</p>
                 </div>
@@ -79,17 +81,17 @@
                     <p class="tab-text">Otras Actividades</p>
                 </div>
             </a>
-            <a href="#" class="tab">
+            <a href="{{ url('legislacion') }}" class="tab">
                 <div>
                     <p class="tab-text">Legislación</p>
                 </div>
             </a>
-            <a href="#" class="tab">
+            <a href="{{ url('estadisticas') }}" class="tab">
                 <div>
                     <p class="tab-text">Estadísticas</p>
                 </div>
             </a>
-            <a href="#" class="tab">
+            <a href="{{ url('galeria') }}" class="tab">
                 <div>
                     <p class="tab-text">Galería</p>
                 </div>
@@ -129,10 +131,6 @@
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="container-fluid bottom-background">
-    
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

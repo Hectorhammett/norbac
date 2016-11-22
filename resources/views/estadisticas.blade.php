@@ -1,14 +1,15 @@
 @extends('layout')
 
-@section('title','Otras Actividades')
+@section('title','Estadísticas')
 
 @section('mainContent')
     <div class="row">
         <div class="col-sm-12">
-            <h1 class="main-header">Otras Actividades</h1>
+            <h1 class="main-header">Estadísticas</h1>
             <ul class="main-text">
-                <li>Restauración de zona antigüa en fase de cese de operaciones</li>
-                <li>Contribución a la quema de gases de efecto invernadero</li>
+                <li>Toneladas recolectadas por Año</li>
+                <li>Porcentaje de basura reciclada</li>
+                <li>Quema de metano</li>
             </ul>
         </div>
     </div>

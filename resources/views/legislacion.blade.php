@@ -1,15 +1,14 @@
 @extends('layout')
 
-@section('title','Otras Actividades')
+@section('title','Legislación')
 
 @section('mainContent')
     <div class="row">
         <div class="col-sm-12">
-            <h1 class="main-header">Otras Actividades</h1>
-            <ul class="main-text">
-                <li>Restauración de zona antigüa en fase de cese de operaciones</li>
-                <li>Contribución a la quema de gases de efecto invernadero</li>
-            </ul>
+            <h1 class="main-header">Legislación</h1>
+            <p class="main-text">
+                Normas y leyes mediante cuales nos encontramos operando.
+            </p>
         </div>
     </div>
     <div class="row hidden-xs">

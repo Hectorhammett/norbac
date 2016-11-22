@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title','Manejo Integral de Residuos')
+@section('title','Contacto')
 
 @section('mainContent')
     <div class="row">

@@ -22,3 +22,19 @@ Route::get("/manejo-integral",function(){
 Route::get("/otras-actividades",function(){
     return view("otrasActividades");
 });
+
+Route::get("/contacto",function(){
+    return view("contacto");
+});
+
+Route::get("/legislacion",function(){
+    return view("legislacion");
+});
+
+Route::get("/estadisticas",function(){
+    return view("estadisticas");
+});
+
+Route::get("/galeria",function(){
+    return view("galeria");
+});
