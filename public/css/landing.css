@@ -7,6 +7,7 @@ body{
 .background-image{
   position:absolute;
   background: url(../img/Portada.jpg) no-repeat center center fixed; 
+  background-attachment: fixed;
   -webkit-backface-visibility: hidden;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -75,6 +76,9 @@ body{
   body{
     min-height: 1460px;
   }
+  .background-image{
+      position:fixed;
+  }
   .tab-holder{
     bottom:900px;
   }
@@ -83,5 +87,6 @@ body{
     display:table;
     width: 100%;
     font-size: 17px;
+    border-right:none;
   }
 }
