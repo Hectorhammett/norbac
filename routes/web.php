@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('landing');
 });
 
+Route::get('/quienes-somos',function(){
+    return view("quienes");
+});
+
 Route::get("/manejo-integral",function(){
     return view("manejoIntegral");
 });

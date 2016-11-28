@@ -1,0 +1,73 @@
+body{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  min-height: 700px;
+}
+
+.background-image{
+  position:absolute;
+  background: url(../img/Portada.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width:100%;
+  height: 100%;
+}
+
+.tab-holder{
+    background-color: #110f35;
+    position: absolute;
+    bottom: 0;
+    height:100px;
+    width: 100%;
+}
+
+.tab{
+    position: relative;
+    height: 100px;
+    background-color: #110f35;
+    width: 10%;
+    float: left;
+    display:inline-block;
+    border-right: 1px solid #FFF;
+    text-decoration: none;
+    color:#fff;
+    font-size:17px;
+    text-align: center;
+}
+
+.tab:hover{
+    color:#110f35;
+    background-color: #fff
+}
+
+.tab-text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 10px;
+    width:100%;
+}
+
+.welcome-holder{
+  width: 100%;
+  text-align: center;
+  color:#fff;
+}
+
+.welcome-holder h1{
+  font-size: 135px;
+}
+
+@media(max-height: 767px){
+  .tab-holder{
+    bottom:140px;
+  }
+  .tab{
+    float:none;
+    display:table;
+    width: 100%;
+  }
+}

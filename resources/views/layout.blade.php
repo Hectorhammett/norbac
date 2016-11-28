@@ -13,6 +13,7 @@
     <!-- Custom CSS -->
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet"/>
 
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -47,10 +48,13 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                  <ul class="nav navbar-nav navbar-right blue-nav visible-xs">
                     <li><a href="{{ url('/') }}">¿Quiénes somos?</a></li>
+                    <li><a href="{{ url('/') }}">Visión</a></li>
+                    <li><a href="{{ url('/') }}">Misión</a></li>
+                    <li><a href="{{ url('/') }}">Valores</a></li>
                     <li><a href="{{ url('/manejo-integral') }}">Manejo de Residuos</a></li>
                     <li><a href="{{ url('/contacto') }}">Contacto</a></li>
                     <li><a href="{{ url('/otras-actividades') }}">Otras Actividades</a></li>
-                    <li><a href="{{ url('/legislacion') }}">Legislación</a></li>
+                    <li><a href="{{ url('/') }}">Páginas de Interés</a></li>
                     <li><a href="{{ url('/estadisticas') }}">Estadísticas</a></li>
                     <li><a href="{{ url('/galeria') }}">Galería</a></li>
                 </ul>
@@ -61,74 +65,11 @@
     <!-- Starts main page -->
     <div class="container main-container">
         <div class="row tab-holder hidden-xs">
-            <a href="{{ url('/') }}" class="tab">
-                <div>
-                    <p class="tab-text">¿Quiénes Somos?</p>
-                </div>
-            </a>
-            <a href="{{ url('manejo-integral') }}" class="tab">
-                <div>
-                    <p class="tab-text">Manejo de Residuos</p>
-                </div>
-            </a>
-            <a href="{{ url('contacto') }}" class="tab">
-                <div>
-                    <p class="tab-text">Contacto</p>
-                </div>
-            </a>
-            <a href="{{ url('otras-actividades') }}" class="tab">
-                <div>
-                    <p class="tab-text">Otras Actividades</p>
-                </div>
-            </a>
-            <a href="{{ url('legislacion') }}" class="tab">
-                <div>
-                    <p class="tab-text">Legislación</p>
-                </div>
-            </a>
-            <a href="{{ url('estadisticas') }}" class="tab">
-                <div>
-                    <p class="tab-text">Estadísticas</p>
-                </div>
-            </a>
-            <a href="{{ url('galeria') }}" class="tab">
-                <div>
-                    <p class="tab-text">Galería</p>
-                </div>
-            </a>
+            @include('tabs')
         </div>
         <div class="row main-row">
-            <div class="col-md-8 col-sm-7">
+            <div class="col-sm-12">
                 @yield('mainContent')
-            </div>
-            <hr class="visible-xs"/>
-            <div class="col-md-4  col-sm-5">
-                <h2 class="text-center interest-title">Páginas de Interés</h2>
-                <div class="interest">
-                    <h4 class="text-primary">Secretaria de Protección al Ambiente del Gobierno del Estado de Baja
-                        California.</h4>
-                    <h4><a href="http://www.spabc.gob.mx/">http://www.spabc.gob.mx/</a></h4>
-                </div>
-
-                <div class="interest">
-                    <h4 class="text-primary">Secretaria de Medio Ambiente y Recursos Naturales</h4>
-                    <h4><a href="https://www.gob.mx/semarnat">https://www.gob.mx/semarnat</a></h4>
-                </div>
-
-                <div class="interest">
-                    <h4 class="text-primary">Procuraduría Federal de Protección al Ambiente</h4>
-                    <h4><a href="http://www.profepa.gob.mx/">http://www.profepa.gob.mx/</a></h4>
-                </div>
-
-                <div class="interest">
-                    <h4 class="text-primary">Metanogenesis a partir de residuos</h4>
-                    <h4><a href="http://www.fao.org/docrep/019/as400s/as400s.pdf">http://www.fao.org/docrep/019/as400s/as400s.pdf</a></h4>
-                </div>
-
-                <div class="interest">
-                    <h4 class="text-primary">-Calentamiento global y control gases de efecto invernadero en México</h4>
-                    <h4><a href="http://cambioclimatico.conanp.gob.mx/">http://cambioclimatico.conanp.gob.mx/</a></h4>
-                </div>
             </div>
         </div>
     </div>

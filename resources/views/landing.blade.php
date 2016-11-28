@@ -1,65 +1,30 @@
-@extends('layout')
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head any other head content must come *after* these tags -->
+    <title>Norbac | Bienvenidos</title>
 
-@section('title','¿Quiénes Somos?')
+    <!-- Bootstrap -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet"/>
 
-@section('mainContent')
-    <div class="row">
-        <div class="col-sm-12">
-            <h1 class="main-header">¿Quiénes Somos?</h1>
-            <p class="main-text">
-                El antiguo relleno sanitario de Tijuana ha almacenado más de doce millones de
+    <!-- custom css -->
+    <link href="{{ asset('css/landing.css') }}" rel="stylesheet" />
 
-                metros cúbicos de residuos en el sitio durante un lapso mayor a cuarenta años.
-
-                Norbac, la nueva administración, ha tomado el gran reto de controlar los
-
-                impactos ambientales asociados al cese de operaciones en las áreas donde se
-
-                ha llegado a su fase de clausura, y proponiendo dentro de un nuevo proyecto
-
-                el manejo integral de residuos mediante procesos avanzados de segregación
-
-                favoreciendo a las actividades de reuso, reutilización y reciclamiento; el
-
-                proceso que minimiza el volumen de residuos recibidos le precede una fase de
-
-                confinamiento y generación de energía eléctrica a partir del uso del biogás,
-
-                resultado de la metanogénesis de los residuos orgánicos presentes en los
-
-                residuos de manejo especial, representando el proyecto de manejo integral de
-
-                residuos más ambicioso del noroeste de México.
-            </p>
-
-            <h1 class="main-header">Visión</h1>
-            <p class="main-text">
-                Norbac pretende convertirse en la empresa líder para el manejo integral de
-
-                residuos de manejo especial en Baja California, empleando tecnología de
-
-                vanguardia y minimizando los impactos ambientales asociados, brindando la
-
-                opción más amigable con el ambiente.
-            </p>
-
-            <h1 class="main-header">Misión</h1>
-            <p class="main-text">
-                Ofrecer a nuestros clientes la mejor opción de servicio de recolección y manejo
-
-                de residuos de manejo especial, en cumplimiento con la normatividad
-
-                ambiental vigente, bajo los conceptos de calidad y precios competitivos de
-
-                mercado.
-            </p>
-
-            <h1 class="main-header">Valores</h1>
-            <p class="main-text">
-                Norbac cuenta con autorizaciones vigentes para el manejo integral de residuos,
-
-                para más de cincuenta corrientes de residuos de manejo especial.
-            </p>
-        </div>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="background-image">
     </div>
-@stop
+    <div class="tab-holder">
+      @include('tabs')
+    </div>
+  </body>
+</html>

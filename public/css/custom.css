@@ -49,6 +49,11 @@
     background-color: #110f35;
 }
 
+.tab-holder{
+    background-color: #110f35;
+    height: 100px;
+}
+
 .tab-holder .tab:last-child{
     border-right: none;
 }
@@ -57,13 +62,13 @@
     position: relative;
     height: 100px;
     background-color: #110f35;
-    width: calc(100%/7);
+    width: 10%;
     float: left;
     display:inline-block;
     border-right: 1px solid #FFF;
     text-decoration: none;
     color:#fff;
-    font-size:1.3vw;
+    font-size:17px;
     text-align: center;
 }
 
@@ -76,7 +81,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    padding: 0 15px;
+    padding: 0 10px;
     width:100%;
 }
 
@@ -99,6 +104,7 @@
 .main-container{
     margin-top: -50px;
     margin-bottom: 75px;
+    opacity: 0.85;
 }
 
 .main-row{
@@ -178,11 +184,17 @@
     #main-title{
         font-size: 3.5em;
     }
+    .tab{
+        font-size: 15px;
+    }
 }
 @media(max-width:991px){
     #main-title{
         font-size: 3em;
         margin-top: 30px;
+    }
+    .tab{
+        font-size: 11px;
     }
 }
 @media(max-width:767px){
