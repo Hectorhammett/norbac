@@ -3,17 +3,17 @@
         <p class="tab-text">¿Quiénes Somos?</p>
     </div>
 </a>
-<a href="{{ url('/') }}" class="tab">
+<a href="{{ url('/vision') }}" class="tab">
     <div>
         <p class="tab-text">Visión</p>
     </div>
 </a>
-<a href="{{ url('/') }}" class="tab">
+<a href="{{ url('/mision') }}" class="tab">
     <div>
         <p class="tab-text">Misión</p>
     </div>
 </a>
-<a href="{{ url('/') }}" class="tab">
+<a href="{{ url('/valores') }}" class="tab">
     <div>
         <p class="tab-text">Valores</p>
     </div>
@@ -33,7 +33,7 @@
         <p class="tab-text">Otras Actividades</p>
     </div>
 </a>
-<a href="{{ url('legislacion') }}" class="tab">
+<a href="{{ url('paginas-de-interes') }}" class="tab">
     <div>
         <p class="tab-text">Páginas de interés</p>
     </div>

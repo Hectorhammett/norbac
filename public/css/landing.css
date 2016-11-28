@@ -2,7 +2,6 @@ body{
   position: absolute;
   height: 100%;
   width: 100%;
-  min-height: 700px;
 }
 
 .background-image{
@@ -22,6 +21,7 @@ body{
     bottom: 0;
     height:100px;
     width: 100%;
+    opacity: 0.8;
 }
 
 .tab{
@@ -60,14 +60,27 @@ body{
 .welcome-holder h1{
   font-size: 135px;
 }
-
-@media(max-height: 767px){
+@media(max-width:1199px){
+    .tab{
+        font-size: 15px;
+    }
+}
+@media(max-width:991px){
+    .tab{
+        font-size: 11px;
+    }
+}
+@media(max-width: 767px){
+  body{
+    min-height: 1460px;
+  }
   .tab-holder{
-    bottom:140px;
+    bottom:900px;
   }
   .tab{
     float:none;
     display:table;
     width: 100%;
+    font-size: 17px;
   }
 }

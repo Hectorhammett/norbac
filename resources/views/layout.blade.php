@@ -14,6 +14,8 @@
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet"/>
 
 
+    @yield('css')
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -36,7 +38,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#" id="logo-holder"><img src="{{ asset('img/logo_white_small.png') }}" class="img-responsive"/></a>
+                        <a class="navbar-brand" href="{{ url('/') }}" id="logo-holder"><img src="{{ asset('img/logo_white_small.png') }}" class="img-responsive"/></a>
                     </div>
                 </div>
                 <div class="col-sm-8 text-center hidden-xs" id="main-title-holder">
@@ -47,14 +49,14 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                  <ul class="nav navbar-nav navbar-right blue-nav visible-xs">
-                    <li><a href="{{ url('/') }}">¿Quiénes somos?</a></li>
-                    <li><a href="{{ url('/') }}">Visión</a></li>
-                    <li><a href="{{ url('/') }}">Misión</a></li>
-                    <li><a href="{{ url('/') }}">Valores</a></li>
+                    <li><a href="{{ url('/quienes-somos') }}">¿Quiénes somos?</a></li>
+                    <li><a href="{{ url('/vision') }}">Visión</a></li>
+                    <li><a href="{{ url('/mision') }}">Misión</a></li>
+                    <li><a href="{{ url('/valores') }}">Valores</a></li>
                     <li><a href="{{ url('/manejo-integral') }}">Manejo de Residuos</a></li>
                     <li><a href="{{ url('/contacto') }}">Contacto</a></li>
                     <li><a href="{{ url('/otras-actividades') }}">Otras Actividades</a></li>
-                    <li><a href="{{ url('/') }}">Páginas de Interés</a></li>
+                    <li><a href="{{ url('/paginas-de-interes') }}">Páginas de Interés</a></li>
                     <li><a href="{{ url('/estadisticas') }}">Estadísticas</a></li>
                     <li><a href="{{ url('/galeria') }}">Galería</a></li>
                 </ul>
@@ -78,5 +80,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="{{ asset('js/app.js') }}"></script>
+    @yield('scripts')
   </body>
 </html>

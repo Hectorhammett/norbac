@@ -19,6 +19,18 @@ Route::get('/quienes-somos',function(){
     return view("quienes");
 });
 
+Route::get('/vision',function(){
+    return view("vision");
+});
+
+Route::get('/mision',function(){
+    return view("mision");
+});
+
+Route::get('/valores',function(){
+    return view('valores');
+});
+
 Route::get("/manejo-integral",function(){
     return view("manejoIntegral");
 });
@@ -31,8 +43,8 @@ Route::get("/contacto",function(){
     return view("contacto");
 });
 
-Route::get("/legislacion",function(){
-    return view("legislacion");
+Route::get("/paginas-de-interes",function(){
+    return view("interes");
 });
 
 Route::get("/estadisticas",function(){
