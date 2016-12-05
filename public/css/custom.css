@@ -16,7 +16,6 @@
 }
 
 #background-image{
-    background-image: url(../img/Tijuana1.jpg);
     position: absolute;
     left: 0;
     right: 0;
@@ -27,6 +26,12 @@
     background-position: 0 -113px;
     z-index: 0;
     background-attachment: fixed;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.background-visible{
+    opacity: 1!important;
 }
 
 #main-title-holder{
@@ -177,6 +182,19 @@
     border: none;
 }
 
+.galery-row{
+    margin-top:30px;
+}
+
+.img-gallery{
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.img-gallery:hover{
+    transform: scale(1.1);
+}
+
 @media(max-width:1199px){
     #main-title-holder{
         margin-top: 60px;
@@ -207,5 +225,11 @@
     #logo-holder{
         width:150px;
         margin:0;
+    }
+    .galery-row{
+        margin-top:0;
+    }
+    .img-gallery{
+        margin-top: 30px;
     }
 }

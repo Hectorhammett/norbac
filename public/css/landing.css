@@ -33,7 +33,6 @@ body{
     width: 10%;
     float: left;
     display:inline-block;
-    border-right: 1px solid #FFF;
     text-decoration: none;
     color:#fff;
     font-size:17px;
@@ -73,14 +72,8 @@ body{
     }
 }
 @media(max-width: 767px){
-  body{
-    min-height: 1460px;
-  }
   .background-image{
       position:fixed;
-  }
-  .tab-holder{
-    bottom:900px;
   }
   .tab{
     float:none;

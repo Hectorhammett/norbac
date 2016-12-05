@@ -23,7 +23,9 @@
             <h3 class="main-header">Contacto general</h3>
             <p class="main-text">
                 rufino.radilla@norbac.com.mx<br/>
-                rodolfo.rodriguez@norbac.com.mx
+                rodolfo.rodriguez@norbac.com.mx<br/>
+                yesica.basulto@norbac.com.mx<br/>
+                gloria.vela@dashwebsolutions.com
             </p>
         </div>
     </div>

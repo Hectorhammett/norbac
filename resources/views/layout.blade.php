@@ -24,6 +24,7 @@
     <![endif]-->
   </head>
   <body>
+    @yield('modal')
     <div id="background-image">
     </div>
     <nav class="navbar navbar-default" id="main-navbar">
@@ -42,7 +43,7 @@
                     </div>
                 </div>
                 <div class="col-sm-8 text-center hidden-xs" id="main-title-holder">
-                    <h1 id="main-title">Biorrelleno Sanitario</h1>
+                    <h1 id="main-title">Biorelleno Sanitario</h1>
                 </div>
             </div>
             <!--  -->
@@ -80,6 +81,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/bg.js') }}"></script>
     @yield('scripts')
   </body>
 </html>
